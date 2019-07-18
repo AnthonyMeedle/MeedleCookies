@@ -1,0 +1,5 @@
+config:
+  google_tag_manager_id:
+    type: text
+    required: false
+    label: Your google tag manager id
