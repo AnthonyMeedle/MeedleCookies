@@ -1,8 +1,9 @@
 {declare_assets directory='MeedleCookies' source='MeedleCookies'}
 <script type="text/javascript">
-	
-	tarteaucitron.user.googletagmanagerId = 'GTM-MFFTS6F';
-	(tarteaucitron.job = tarteaucitron.job || []).push('googletagmanager');
-
+	{$useTarteAuCitron=0}
+	{loop type="module-config" name="tarteaucitron-gtm-id" module="meedlecookies" variable="google_tag_manager_id" }
+		{if $VALUE} tarteaucitron.user.googletagmanagerId = '{$VALUE nofilter}'; {$useTarteAuCitron=1} {/if}
+	{/loop}
+	 {if $useTarteAuCitron} (tarteaucitron.job = tarteaucitron.job || []).push('googletagmanager');{/if}
 </script>
 

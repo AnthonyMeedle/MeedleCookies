@@ -16,7 +16,7 @@ class MeedleCookiesFrontHook extends BaseHook {
 			"title" => $this->trans("Réservation")
 		));		
     }
-	
+
 	public function onReservationStyleSheet(HookRenderEvent $event){
         $event->add($this->addCSS("/assets/css/bootstrap-datetimepicker.css"));
     }
@@ -25,6 +25,5 @@ class MeedleCookiesFrontHook extends BaseHook {
 		$event->add($this->addJS("/assets/js/bootstrap-datetimepicker.js"));
     }
 
-	
 }
 ?>
