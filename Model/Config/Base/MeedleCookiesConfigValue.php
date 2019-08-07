@@ -8,4 +8,5 @@ namespace MeedleCookies\Model\Config\Base;
 class MeedleCookiesConfigValue
 {
     const GOOGLE_TAG_MANAGER_ID = "google_tag_manager_id";
+    const TARTEAUCITRON_MULTIPLETAGUA = "tarteaucitron_multipletagua";
 }

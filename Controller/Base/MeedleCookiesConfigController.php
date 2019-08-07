@@ -43,6 +43,7 @@ class MeedleCookiesConfigController extends BaseAdminController
             $form = $this->validateForm($baseForm);
             $data = $form->getData();
             MeedleCookies::setConfigValue(MeedleCookiesConfigValue::GOOGLE_TAG_MANAGER_ID, is_bool($data["googletagmanagerid"]) ? (int) ($data["googletagmanagerid"]) : $data["googletagmanagerid"]);
+            MeedleCookies::setConfigValue(MeedleCookiesConfigValue::TARTEAUCITRON_MULTIPLETAGUA, is_bool($data["tarteaucitron_multipletagua"]) ? (int) ($data["tarteaucitron_multipletagua"]) : $data["tarteaucitron_multipletagua"]);
         } catch (FormValidationException $ex) {
             // Invalid data entered
             $errorMessage = $this->createStandardFormValidationErrorMessage($ex);

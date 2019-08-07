@@ -34,6 +34,14 @@ class MeedleCookiesConfigForm extends BaseForm
                 ],
                 "data" => MeedleCookies::getConfigValue(MeedleCookiesConfigValue::GOOGLE_TAG_MANAGER_ID),
             ))
+            ->add("tarteaucitron_multipletagua", "text", array(
+                "label" => $this->readKey("tarteaucitron_multipletagua", $translationKeys),
+                "label_attr" => [
+                    "for" => $this->readKey("tarteaucitron_multipletagua", $fieldsIdKeys),
+                    "help" => $this->readKey("help.tarteaucitron_multipletagua", $translationKeys)
+                ],
+                "data" => MeedleCookies::getConfigValue(MeedleCookiesConfigValue::TARTEAUCITRON_MULTIPLETAGUA),
+            ))
         ;
     }
 

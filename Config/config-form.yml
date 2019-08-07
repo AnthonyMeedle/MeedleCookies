@@ -3,3 +3,8 @@ config:
     type: text
     required: false
     label: Your google tag manager id
+
+  tarteaucitron_multipletagua
+    type: text
+    required: false
+    label: Your google tag UA

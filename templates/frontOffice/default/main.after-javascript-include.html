@@ -4,6 +4,11 @@
 	{loop type="module-config" name="tarteaucitron-gtm-id" module="meedlecookies" variable="google_tag_manager_id" }
 		{if $VALUE} tarteaucitron.user.googletagmanagerId = '{$VALUE nofilter}'; {$useTarteAuCitron=1} {/if}
 	{/loop}
+
+	{loop type="module-config" name="tarteaucitron_multipletagua" module="meedlecookies" variable="tarteaucitron_multipletagua" }
+		{if $VALUE} tarteaucitron.user.multiplegtagUa = ['{$VALUE nofilter}'];{$useTarteAuCitron=1} {/if}
+	{/loop}
+
 	 {if $useTarteAuCitron} (tarteaucitron.job = tarteaucitron.job || []).push('googletagmanager');{/if}
 </script>
 

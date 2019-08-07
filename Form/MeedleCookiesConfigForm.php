@@ -14,6 +14,7 @@ class MeedleCookiesConfigForm extends BaseMeedleCookiesConfigForm
     {
         return array(
             "googletagmanagerid" => $this->translator->trans("Your google tag manager Id", [], MeedleCookies::MESSAGE_DOMAIN),
+            "tarteaucitron_multipletagua" => $this->translator->trans("Your google UA", [], MeedleCookies::MESSAGE_DOMAIN),
         );
     }
 }
