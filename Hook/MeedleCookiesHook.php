@@ -14,8 +14,7 @@ class MeedleCookiesHook extends BaseHook {
     }
 
     public function onMainHeadBottom(HookRenderEvent $event){
-	//	$event->add($this->addJS("/assets/tarteaucitron/tarteaucitron.js"));
-		$event->add('<script src="https://ressources.meedle.fr/tarteaucitron/tarteaucitron.js"></script>');
+		$event->add($this->addJS("/assets/tarteaucitron/tarteaucitron.js"));
 		$event->add($this->render("main.head-bottom.html"));
     }
     public function onAfterJavascriptInclude(HookRenderEvent $event){
