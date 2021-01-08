@@ -1,6 +1,5 @@
 /*global tarteaucitron */
 tarteaucitron.lang = {
-    "middleBarHead": "☝ 🍪",
     "adblock": "Γεια σας! Ο ιστότοπος αυτός σας επιτρέπει να επιλέξετε τις υπηρεσίες που παρέχονται από τρίτους που θα θέλατε να επιτρέψετε.",
     "adblock_call": "Παρακαλώ απενεργοποιήστε τα προγράμματα απόρριψης διαφημίσεων για να ξεκινήσετε τις τροποποιήσεις σας.",
     "reload": "Ανανέωση της σελίδας",
@@ -72,8 +71,5 @@ tarteaucitron.lang = {
     "other": {
         "title": "Λοιπές υπηρεσίες",
         "details": "Υπηρεσίες που παρουσιάζουν άλλο περιεχόμενο."
-    },
-    
-    "mandatoryTitle": "Mandatory cookies",
-    "mandatoryText": "This site uses cookies necessary for its proper functioning which cannot be deactivated."
+    }
 };

@@ -1,7 +1,5 @@
 /*global tarteaucitron */
 tarteaucitron.lang = {
-
-    "middleBarHead": "☝ 🍪",
     "adblock": "Bonjour! Ce site joue la transparence et vous donne le choix des services tiers à activer.",
     "adblock_call": "Merci de désactiver votre adblocker pour commencer la personnalisation.",
     "reload": "Recharger la page",
@@ -31,7 +29,6 @@ tarteaucitron.lang = {
     "more": "En savoir plus",
     "source": "Voir le site officiel",
     "credit": "Gestion des cookies par tarteaucitron.js",
-    "noServices": "Ce site n'utilise aucun cookie nécessitant votre consentement.",
 
     "toggleInfoBox": "Afficher/masquer les informations sur le stockage des cookies",
     "title": "Panneau de gestion des cookies",
@@ -74,8 +71,5 @@ tarteaucitron.lang = {
     "other": {
         "title": "Autre",
         "details": "Services visant à afficher du contenu web."
-    },
-    
-    "mandatoryTitle": "Cookies obligatoires",
-    "mandatoryText": "Ce site utilise des cookies nécessaires à son bon fonctionnement qui ne peuvent pas être désactivés."
+    }
 };
